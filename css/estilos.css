@@ -1,7 +1,17 @@
+@font-face {
+  font-family: "ProximaNova";
+  font-style: normal;
+  font-weight: normal;
+  src: url("./fonts/ProximaNova.eot?") format("eot"),
+    url("./fonts/ProximaNova.woff") format("woff"),
+    url("./fonts/ProximaNova.ttf") format("truetype"),
+    url("./fonts/ProximaNova.svg#ProximaNova") format("svg");
+}
+
 * {
   margin: 0px;
   padding: 0px;
-  font-family: "sans-serif";
+  font-family: "ProximaNova", "sans-serif";
 }
 .container {
   background-color: #efeeec;
@@ -25,6 +35,13 @@
   margin: 0;
   width: 100%;
 }
+.gradiente-honda {
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 1) 0%,
+    rgba(239, 238, 236, 1) 100%
+  );
+}
 .fecha-dic {
   display: flex;
   justify-content: center;
@@ -39,6 +56,15 @@
 }
 .parrafo-uno {
   margin: 0 0 40px;
+  
+}
+.parrafo-dos {
+  color: #1c4b81;
+  font-size: 32px;
+}
+.parrafo-tres {
+  color: #1c4b81;
+  font-size: 20px;
 }
 .tu-tienda-virtual img {
   width: 160px;
@@ -52,8 +78,19 @@
   width: 100%;
   flex-direction: column;
 }
+.container-honda {
+  position: relative;
+  z-index: 9999;
+  margin-top: -320px;
+}
+
+.honda {
+  position: relative;
+  top: -82px;
+}
 .parrafo-cuatro {
   margin: 0 0 10px;
+  color: #1c4b81;
 }
 .icon-azul-linea {
   display: flex;
@@ -70,6 +107,9 @@
   display: flex;
   width: 1200px;
   margin: 0 0 30px;
+}
+.caja-parrafo-uno a {
+  color: #1c4b81;
 }
 .parrafo-quinto {
   margin: 0 200px 0 180px;
@@ -89,13 +129,165 @@
   color: white;
   border: none;
   border-radius: 25px;
-  padding: 15px 40px;
+  padding: 15px 44px;
   display: flex;
+  margin: 0 0 20px;
 }
 .icon-carrito {
   width: auto;
   height: 20px;
   margin-right: 8px;
+}
+.parrafo-septimo {
+  margin: 0 0 70px;
+}
+.parrafo-septimo a {
+  text-decoration: none;
+  color: black;
+}
+.parrafo-septimo a strong {
+  font-style: italic;
+}
+.parrafo-octavo {
+  color: #1c4b81;
+  margin: 0 0 15px;
+  font-size: 31px;
+}
+.parrafo-noveno {
+  margin: 0 0 20px;
+}
+.boton-activar-tienda {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.boton-activar-tienda button {
+  background-color: #1f96ab;
+  color: white;
+  border: none;
+  border-radius: 25px;
+  padding: 15px 44px;
+  display: flex;
+  margin: 0 0 40px;
+}
+.icon-power {
+  width: auto;
+  height: 20px;
+  margin-right: 8px;
+}
+.separador {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  flex-direction: column;
+}
+.separador img {
+  width: 1000px;
+  margin: 15px 100px 30px 100px;
+}
+.parrafo-pago {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.col-izq {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  height: 494px;
+}
+.boton-pay {
+  display: flex;
+  justify-content: right;
+  align-items: center;
+}
+.parrafo-boton-pagar {
+  width: 100px;
+}
+.boton-pagar-factura {
+  background-color: #1f96ab;
+  color: white;
+  border: none;
+  border-radius: 30px;
+  padding: 17px 114px;
+  display: flex;
+  margin: 25px 0 40px;
+  font-size: 20px;
+}
+.parrafos {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  margin: 10px 190px 10px 160px;
+  width: 480px;
+  font-size: 17px;
+}
+.parrafos img {
+  justify-content: flex-start;
+  display: flex;
+  align-items: flex-start;
+  margin: 0 20px;
+}
+.col-der {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+}
+.col-der img {
+  position: relative;
+  width: 419px;
+  height: 381px;
+  top: 27px;
+  left: 42px;
+}
+.final-container {
+  display: flex;
+  padding: 41px 171px 0 167px;
+  justify-content: space-between;
+  height: 370px;
+}
+.final-container div {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  width: 200px;
+  height: 100px;
+}
+.final-container div img {
+  width: 120px;
+  margin: 0 0 20px 0;
+}
+.final-container div p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: 20px;
+}
+.barra-azul {
+  display: flex;
+  background-color: #1f96ab;
+  text-align: center;
+  align-items: center;
+  justify-content: start;
+  padding: 30px 213px;
+}
+.barra-azul div {
+  text-align: left;
+  margin: 0 0 0 30px;
+  color: white;
+  font-size: 19px;
+}
+.barra-azul a {
+  color: white;
+}
+.final-page {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 45px;
 }
 
 @media (max-width: 1200px) {
