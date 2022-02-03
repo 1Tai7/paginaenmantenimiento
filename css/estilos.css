@@ -7,7 +7,6 @@
     url("./fonts/ProximaNova.ttf") format("truetype"),
     url("./fonts/ProximaNova.svg#ProximaNova") format("svg");
 }
-
 * {
   margin: 0px;
   padding: 0px;
@@ -19,7 +18,6 @@
 .container-header {
   background-color: white;
 }
-/* cambiar la fuente y ya*/
 .logo-imagen-i {
   /* width: 1366px;*/
   height: 20%;
@@ -56,7 +54,6 @@
 }
 .parrafo-uno {
   margin: 0 0 40px;
-  
 }
 .parrafo-dos {
   color: #1c4b81;
@@ -103,16 +100,22 @@
   width: 1000px;
   margin: 15px 100px 20px 100px;
 }
+.icon-azul-linea-vertical {
+  display: none;
+}
 .caja-parrafo-uno {
   display: flex;
   width: 1200px;
   margin: 0 0 30px;
 }
+.caja-parrafo-uno div {
+  display: flex;
+}
 .caja-parrafo-uno a {
-  color: #1c4b81;
+  color: #1f96ab;
 }
 .parrafo-quinto {
-  margin: 0 200px 0 180px;
+  margin: 0 200px 0 50px;
   width: 400px;
 }
 .parrafo-sexto {
@@ -290,9 +293,164 @@
   padding: 30px 45px;
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 600px) {
   .icon-azul-linea img {
     width: 500px;
     margin: 15px 100px 20px 100px;
+  }
+  .container-img-fecha {
+  }
+  .parrafo-uno {
+    text-align: center;
+    padding: 0px 35px;
+    font-size: 20px;
+  }
+  .honda {
+    top: -8px;
+  }
+  .container-honda {
+    margin-top: -227px;
+  }
+
+  .tu-tienda-virtual img {
+    width: 100%;
+    height: 90px;
+    top: 100px;
+    position: relative;
+  }
+  .caja-parrafo-uno {
+    flex-direction: row;
+    width: 100px;
+    margin: 10px 10px;
+  }
+  .caja-parrafo-uno div {
+    flex-direction: column;
+  }
+  .icon-azul-linea-vertical {
+    object-fit: cover;
+    padding: 0px 20px 0 30px;
+    height: 324px;
+    display: block;
+  }
+  .icon-azul-linea img {
+    display: none;
+  }
+  .parrafo-cuatro {
+    font-size: 33px;
+    margin-top: 100px;
+    text-align: center;
+    padding: 0px 35px;
+  }
+  .parrafo-quinto {
+    margin: 0 0 38px;
+    width: 232px;
+    height: 106px;
+    padding: 10px 10px;
+    margin-top: 21px;
+  }
+  .parrafo-sexto {
+    margin: 0px;
+    width: 217px;
+    height: 100px;
+    padding: 10px 10px;
+    margin-top: 20px;
+  }
+  .boton-tienda-virtual {
+    width: 385px;
+    margin: 20px 0 20px;
+  }
+  .boton-tienda-virtual button {
+    padding: 17px 39px;
+    font-size: 20px;
+  }
+  .parrafo-septimo {
+    text-align: center;
+    margin: 0 0 60px;
+  }
+  .parrafo-octavo {
+    text-align: center;
+  }
+  .parrafo-noveno {
+    text-align: center;
+    padding: 10px 10px;
+  }
+  .boton-activar-tienda {
+    width: 385px;
+  }
+  .boton-activar-tienda button {
+    padding: 17px 26px;
+    font-size: 20px;
+  }
+  .parrafo-pago {
+    flex-direction: column-reverse;
+  }
+  .separador img {
+    width: 85%;
+    object-fit: none;
+    height: 20px;
+  }
+  .parrafos {
+    margin: 0;
+    font-size: 17px;
+    width: 100%;
+  }
+  .col-izq {
+    width: auto;
+    height: 640px;
+  }
+  .p-eva {
+    padding: 20px;
+  }
+  .parrafos img {
+    margin: 28px 20px;
+  }
+  .col-der {
+    height: 314px;
+  }
+  .col-der img {
+    left: 0;
+    top: 7px;
+    width: 304px;
+    height: 255px;
+    margin: 0px 37px;
+  }
+  .parrafos button {
+    padding: 14px 79px;
+  }
+  .parrafo-boton-pagar {
+    width: 27px;
+  }
+  .final-container {
+    flex-direction: column;
+    justify-content: space-between;
+    height: 820px;
+    padding: 20px 90px;
+  }
+  .que-no {
+    text-align: center;
+    height: 237px;
+    width: 326px !important;
+  }
+  .barra-azul {
+    margin-top: 200px;
+    padding: 30px 24px;
+  }
+  .icon-manos {
+    padding: 0 0 65px;
+  }
+  .final-page {
+    flex-direction: column-reverse;
+    text-align: center;
+    padding: 0;
+    font-size: 12px;
+  }
+  .final-page img {
+    height: 84px;
+    width: 342px;
+    padding: 10px 10px;
+  }
+  .final-page p {
+    width: 210px;
+    height: 70px;
   }
 }
